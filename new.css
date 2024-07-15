@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF952;
+}
+img{
+    width: 150%;
+    height: 150%;
+    border-radius: 8px;
+}
+
+.picture1{
+    width: 500px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+.left-column {
+    background-color: yellow;
+    min-height: 100vh;
+}
+
+.right-column {
+    background-color: red;
+    min-height: 100vh;
+}
+
+.btn.custom-btn-store, .btn.custom-btn-order, .btn.custom-btn-customer, .btn.custom-btn-report, .btn.custom-btn-exit {
+    color: rgb(0, 0, 0);    
+    width: 100%; /* Ensure buttons take full width of the column */
+    margin-bottom: 25px; /* Add some space between buttons */
+}
+
+.custom-btn-store {
+    background-color: #ffffff; /* Green */
+}
+
+.custom-btn-order {
+    background-color: #ffffff; /* Blue */
+}
+
+.custom-btn-customer {
+    background-color: #ffffff; /* Orange */
+}
+
+.custom-btn-report {
+    background-color: #ffffff; /* Red */
+}
+
+.custom-btn-exit {
+    background-color: #ffffff; /* Gray */
+}
+
+
+
+/*===============================================================================================================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.menu {
+    background-color: red;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.menu button {
+    display:block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ===================================================================================================== */
+
+.custom-search-input {
+    width: 750px;
+}
