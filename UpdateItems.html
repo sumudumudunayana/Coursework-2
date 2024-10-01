@@ -10,32 +10,40 @@
         <header>
             <h1>THE BURGER JOINT</h1>
 
-            <h2>Add Items</h2><br>
+            <h2>Update Items</h2><br>
         </header>
-       
-          
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Item Id</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div><br>
 
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Item Name</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div><br>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Experation Date</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div><br>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Customer Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+              <form class="d-flex" role="search" onsubmit="return false;">
+                  <input id="searchInput" class="form-control me-2 custom-search-input" type="search" placeholder="Search by Item ID" aria-label="Search">
+                  <button class="btn btn-outline-success" type="button" onclick="searchItem()">Search</button>
+              </form>
           </div>
+      </nav><br>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Item Id</span>
+          <input type="text" class="form-control" id="itemId" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div><br>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Item Name</span>
+          <input type="text" class="form-control" id="itemName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div><br>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Expiration Date</span>
+          <input type="text" class="form-control" id="expireDate" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div><br>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Customer Email</span>
+          <input type="text" class="form-control" id="customerEmail" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
           
           
-        <button class="back-button">Add</button>
+        <button class="back-button" onclick="UpdateItem()">Update</button>
         <a href="StoreManagement.html"><button class="back-button">Back</button></a>
         
     </div>
