@@ -11,19 +11,25 @@
         <header>
             <h1>THE BURGER JOINT</h1>
 
-            <h2>View Orders</h2><br>
+            <h2>View Items</h2><br>
         </header>
 
-        <h3>Catogory 01</h3>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" onclick="loadItems()">Search</button>
+                </form>
+            </div>
+        </nav><br>
 
         <table class="table">
             <thead>
               <tr>
                 <th scope="col">Item Id</th>
                 <th scope="col">Item Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Available Units</th>
-                <th scope="col">Discount</th>
+                <th scope="col">Experation D ate</th>
+                <th scope="col">E mail</th>
               </tr>
             </thead>
             <tbody>
@@ -32,18 +38,15 @@
                 <td><input type="text"></td>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
-                <td><input type="text"></td>
               </tr>
               <tr>
                 <th scope="row"><input type="text"></th>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
-                <td><input type="text"></td>
               </tr>
               <tr>
                 <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
@@ -51,48 +54,10 @@
             </tbody>
           </table><br>
 
-          <h3>Catogory 02</h3>
-
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Item Id</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Available Units</th>
-                <th scope="col">Discount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-            </tbody>
-          </table><br>
-
-          
-
+        <a href="StoreManagement.html"><button class="back-button">Back</button></a>
         
-        <button class="back-button">Back</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
