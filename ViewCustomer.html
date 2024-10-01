@@ -11,42 +11,44 @@
         <header>
             <h1>THE BURGER JOINT</h1>
 
-            <h2>View Customer</h2><br>
+            <h2>View Customers</h2><br>
         </header>
 
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav><br>
-       
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Customer Id</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div><br>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Customer Id</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Telephone</th>
+                <th scope="col">Customer Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><input type="text"></th>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="text"></th>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="text"></th>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+            </tbody>
+          </table><br>
 
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Customer Name</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div><br>
-
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Customer Telephone</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div><br>
-
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Customer Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
-        
         <a href="CustomerManagement.html"><button class="back-button">Back</button></a>
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="customer.js"></script>
 </body>
 </html>
