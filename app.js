@@ -40,14 +40,14 @@ function AddItem(){
     console.log("All Items in localStorage:", items);
 
     // Clear the input fields
-    document.getElementById('itemId').value = '';
-    document.getElementById('itemName').value = '';
-    document.getElementById('expireDate').value = '';
-    document.getElementById('customerEmail').value = '';
+    clearInputFields();
 
     // Display success message
     alert('Item added successfully!');
 }
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to load items from localStorage and display them in the table
@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
     loadItems();
 });
 
+
+
+
 function searchItem() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase(); // Get the search input value
     const items = JSON.parse(localStorage.getItem('items')) || []; // Retrieve items from localStorage
@@ -115,12 +118,7 @@ function searchItem() {
     }
 }
 
-function clearInputFields() {
-    document.getElementById('itemId').value = '';
-    document.getElementById('itemName').value = '';
-    document.getElementById('expireDate').value = '';
-    document.getElementById('customerEmail').value = '';
-}
+
 
 
 
@@ -156,12 +154,10 @@ function UpdateItem() {
     }
 }
 
-function clearInputFields() {
-    document.getElementById('itemId').value = '';
-    document.getElementById('itemName').value = '';
-    document.getElementById('expireDate').value = '';
-    document.getElementById('customerEmail').value = '';
-}
+
+
+
+
 
 function deleteItem() {
     const itemId = document.getElementById('itemId').value; // Get the ID of the item to delete
@@ -188,5 +184,16 @@ function deleteItem() {
     } else {
         alert('Item not found. Please check the ID and try again.');
     }
+}
+
+
+
+
+
+function clearInputFields() {
+    document.getElementById('itemId').value = '';
+    document.getElementById('itemName').value = '';
+    document.getElementById('expireDate').value = '';
+    document.getElementById('customerEmail').value = '';
 }
 
