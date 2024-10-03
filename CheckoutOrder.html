@@ -13,11 +13,6 @@
 
             <h2>Checkout Orders</h2><br>
         </header>
-       
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div><br>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Order Id</span>
@@ -33,41 +28,22 @@
                 <th scope="col">Price</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-            </tbody>
+            <tbody id="orderTable">
           </table><br>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Sub Total</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" id="subTotal" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
         </div>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Discount</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" id="discount" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
         </div>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Total</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" id="totalSpending" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
         </div>
 
         <button class="back-button">Confirm</button>
@@ -76,6 +52,6 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="order.js"></script>
 </body>
 </html>

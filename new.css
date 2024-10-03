@@ -31,48 +31,41 @@ img{
 
 .btn.custom-btn-store, .btn.custom-btn-order, .btn.custom-btn-customer, .btn.custom-btn-report, .btn.custom-btn-exit {
     color: rgb(0, 0, 0);    
-    width: 100%; /* Ensure buttons take full width of the column */
-    margin-bottom: 25px; /* Add some space between buttons */
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .custom-btn-store {
-    background-color: #ffffff; /* Green */
+    background-color: #ffffff;
 }
 
 .custom-btn-order {
-    background-color: #ffffff; /* Blue */
+    background-color: #ffffff; 
 }
 
 .custom-btn-customer {
-    background-color: #ffffff; /* Orange */
+    background-color: #ffffff;
 }
 
 .custom-btn-report {
-    background-color: #ffffff; /* Red */
+    background-color: #ffffff;
 }
 
 .custom-btn-exit {
-    background-color: #ffffff; /* Gray */
+    background-color: #ffffff;
 }
 
 
 
-/*===============================================================================================================================*/
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: yellow;
-}
-
-.container {
+/* .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
+} */
+
 
 header {
     text-align: center;
@@ -119,8 +112,6 @@ header h2 {
     cursor: pointer;
 }
 
-
-/* ===================================================================================================== */
 
 .custom-search-input {
     width: 750px;

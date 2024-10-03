@@ -10,65 +10,72 @@
     <div class="container">
         <header>
             <h1>THE BURGER JOINT</h1>
-
-            <h2>Best Customer Report</h2><br>
+            <h2>Place Order</h2><br>
         </header>
 
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex" role="search" onsubmit="return false;">
+                    <input id="searchInput" class="form-control me-2 custom-search-input" type="search" placeholder="Search by Item ID" aria-label="Search">
+                    <button class="btn btn-outline-success" type="button" onclick="searchItem()">Search</button>
                 </form>
             </div>
         </nav><br>
+
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="item-id">Item Id</span>
+            <input type="text" id="itemId" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div><br>
+    
+     
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="item-name">Item Name</span>
+            <input type="text" id="itemName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div><br>
+    
+      
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="item-expire-date">Expiration Date</span>
+            <input type="text" id="expireDate" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div><br>
+    
        
         <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="unit-price">Unit Price</span>
+            <input type="text" id="unitPrice" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
         </div><br>
+    
+       
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="unit-discount">Discount</span>
+            <input type="text" id="discount" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div><br>
+ 
+              <br><br>
 
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Customer Id</th>
-                <th scope="col">Customer Name</th>
-                <th scope="col">Contact Number</th>
-                <th scope="col">Total Spending</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="text"></th>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-              </tr>
-            </tbody>
-          </table><br>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Qty</span>
+                <input type="text" class="form-control" id="quantity" aria-label="Total Spending">
+            </div>
 
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Total Spending</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+             <button id="addButton" class="back-button" onclick="calculateTotal()">ADD</button>
+             <br><br>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Total Spending</span>
+            <input type="text" class="form-control" id="totalSpending" aria-label="Total Spending" disabled>
         </div>
 
-        <a href="OrderManagement.html"><button class="back-button">Back</button></a>
-        <a href="CheckoutOrder.html"><button class="back-button">Checkout</button></a>
+
+        <div>
+            <a href="OrderManagement.html" class="back-button">Back</a>
+            <a href="CheckoutOrder.html" class="back-button" onclick="displayOrders()">Checkout</a>
+        </div>
         
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="order.js"></script>
 </body>
 </html>
