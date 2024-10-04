@@ -1,5 +1,6 @@
 init();
 function init() {
+    
     let itemsarray=JSON.parse(localStorage.getItem("items"))|| [
         { id: "B0001", name: "Classic Burger(Large)", category: "burgers", unitPrice: 1500, discount: 0, stock: 15, expiryDate: "2025-07-04" },
         { id: "B0002", name: "Classic Burger(Regular)", category: "burgers", unitPrice: 750, discount: 15, stock: 15, expiryDate: "2025-07-04" },
@@ -186,20 +187,19 @@ function clearInputFields() {
     document.getElementById('discount').value = '';
 }
 
-displayItems();
-function displayItems() {  
-    let items = JSON.parse(localStorage.getItem('items')) || [];
+// function displayItems() {  
+//     let items = JSON.parse(localStorage.getItem('items')) || [];
     
-    const tableBody = document.getElementById('itemTable');
-    let body=``;
-    items.forEach(element => {
-        body+=`<tr>
-        <td>${element.id}</td>
-        <td>${element.name}</td>
-        <td>${element.expiryDate}</td>
-        <td>${element.unitPrice}</td>
-        <td>${element.discount}</td>
-        </tr>`
-    });        
-    tableBody.innerHTML = body;
-}
+//     const tableBody = document.getElementById('itemTable');
+//     let body=``;
+//     items.forEach(element => {
+//         body+=`<tr>
+//         <td>${element.id}</td>
+//         <td>${element.name}</td>
+//         <td>${element.expiryDate}</td>
+//         <td>${element.unitPrice}</td>
+//         <td>${element.discount}</td>
+//         </tr>`
+//     });        
+//     tableBody.innerHTML = body;
+// }
